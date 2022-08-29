@@ -23,9 +23,6 @@ then
 	rm -rf disk_images/nebukinprompt.flp
 	mkdosfs -C disk_images/nebukinprompt.flp 1440 || exit
 	chown $SUDO_USER disk_images/nebukinprompt.flp
-else
-	mkdosfs -C disk_images/nebukinprompt.flp 1440 || exit
-	chown $SUDO_USER disk_images/nebukinprompt.flp
 fi
 
 
