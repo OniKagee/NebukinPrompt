@@ -17,6 +17,7 @@ fi
 if [ ! -e disk_images/nebukinprompt.flp ]
 then
 	echo ">>> Creating new floppy image..."
+	rm -rf disk_images/nebukinprompt.flp
 	mkdosfs -C disk_images/nebukinprompt.flp 1440 || exit
 	chown $SUDO_USER disk_images/nebukinprompt.flp
 fi
