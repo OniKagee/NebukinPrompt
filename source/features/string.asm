@@ -1,9 +1,4 @@
 ; ==================================================================
-; TachyonOS -- The TachyonOS Operating System kernel
-; Based on the MikeOS Kernel
-; Copyright (C) 2006 - 2012 MikeOS Developers -- see doc/MikeOS/LICENSE.TXT
-; Copyright (C) 2013 TachyonOS Developers -- see doc/LICENCE.TXT
-;
 ; STRING MANIPULATION ROUTINES
 ; ==================================================================
 

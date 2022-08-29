@@ -3,7 +3,7 @@
 ; ==================================================================
 
 ; ------------------------------------------------------------------
-; os_get_api_version -- Return current version of MikeOS API
+; os_get_api_version -- Return current version of API
 ; IN: Nothing; OUT: AL = API version number
 
 os_get_api_version:

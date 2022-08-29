@@ -23,7 +23,7 @@ start_shell:
 	call os_memory_write
 	BOOTOK
 	
-	BOOTMSG 'Entering TOSMUI...'
+	BOOTMSG 'Entering NMUI...'
 	mov ax, BOOT_DELAY		; Delay to show information
 	call os_pause
 

@@ -92,7 +92,7 @@ os_boot_start:
 	mov es, ax
 	jmp 0x2000:0
 
-	.boot_msg				db "Relativity Bootloader", DOS_NEWLINE, 0
+	.boot_msg				db "Nebukin OSLoader", DOS_NEWLINE, 0
 	.osinfo_msg				db OS_BOOT_MSG, DOS_NEWLINE, 0
 	.kernel_filename			db OS_KERNEL_FILENAME, 0
 
