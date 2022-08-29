@@ -37,5 +37,7 @@ jobs:
 
       - name: Pushing
         run: |
+          git add .
+          git commit -m 'New build added!'
           git branch -M main
           git push -u origin main
