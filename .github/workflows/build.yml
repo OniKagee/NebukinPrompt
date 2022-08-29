@@ -37,6 +37,5 @@ jobs:
 
       - name: Pushing
         run: |
-          git remote add origin https://github.com/NebularPetrov/NebukinPrompt.git
           git branch -M main
           git push -u origin main
