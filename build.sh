@@ -27,7 +27,7 @@ echo ">>> Assembling bootloader..."
 nasm -O0 -w+orphan-labels -f bin -o source/bootload/bootload.bin source/bootload/bootload.asm || exit
 
 
-echo ">>> Assembling TachyonOS kernel..."
+echo ">>> Assembling kernel..."
 
 cd source
 nasm -O0 -w+orphan-labels -f bin -o kernel.bin kernel.asm || exit
@@ -52,7 +52,7 @@ echo ">>> Adding bootloader to floppy image..."
 dd status=noxfer conv=notrunc if=source/bootload/bootload.bin of=disk_images/nebukinprompt.flp || exit
 
 
-echo ">>> Copying TachyonOS kernel and programs..."
+echo ">>> Copying kernel and programs..."
 
 rm -rf tmp-loop
 
@@ -70,7 +70,7 @@ rm -rf tmp-loop
 
 echo ">>> Creating CD-ROM ISO image..."
 
-rm -f disk_images/tachyonos.iso
-mkisofs -quiet -V 'NBKNPRPT' -input-charset iso8859-1 -o disk_images/tachyonos.iso -b nebukinprompt.flp disk_images/ || exit
+rm -f disk_images/nebukinprompt.iso
+mkisofs -quiet -V 'NBKNPRPT' -input-charset iso8859-1 -o disk_images/nebukinprompt.iso -b nebukinprompt.flp disk_images/ || exit
 
 echo '>>> Done!'
