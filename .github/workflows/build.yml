@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Installing compiler
-        run: sudo apt-get update -y && sudo apt-get install nasm mkdosfs mkisofs
+        run: sudo apt-get update -y && sudo apt-get install nasm
 
       # Runs a set of commands using the runners shell
       - name: Building
