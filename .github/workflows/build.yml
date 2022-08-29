@@ -34,3 +34,11 @@ jobs:
         run: |
           sudo chmod +x build.sh
           sudo ./build.sh
+
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
+          files: |
+            nebukinprompt.iso
+            nebukinprompt.flp
