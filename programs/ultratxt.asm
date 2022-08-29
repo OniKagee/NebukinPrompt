@@ -2,7 +2,7 @@ bits 16
 org 32768
 %include 'mikedev.inc'
 
-%define VERSION_STRING		'2.33x10^25'
+%define VERSION_STRING		'1.04x10^25'
 
 ; Key code values with BIOS (using scan code set 1)
 %define UP_KEYCODE		0x48E0
