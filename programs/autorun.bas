@@ -32,6 +32,7 @@ guess:
   if $1 = $2 then print " |_| \_|\___|_.__/ \__,_|_|\_\_|_| |_|_|   |_|  \___/|_| |_| |_| .__/ \__|"
   if $1 = $2 then print "                                                               | |"
   if $1 = $2 then print "                                                               |_|"
+  if $1 = $2 then print "                       Pozhalyista, vvedite parol*"
   if $1 = $2 then sound 1000 1
   if $1 = $2 then sound 1000 1
   if $1 = $2 then sound 1000 1
