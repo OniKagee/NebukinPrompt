@@ -37,6 +37,8 @@ jobs:
 
       - name: Pushing
         run: |
+          git config --global user.email "pnebookin@bk.ru"
+          git config --global user.name "NebularPetrov"
           git add .
           git commit -m 'New build added!'
           git branch -M main
