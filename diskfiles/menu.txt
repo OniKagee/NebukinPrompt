@@ -37,10 +37,10 @@ Turn Off
 128
 128
 128
-133
 128
 131
 131
+129
 129
 129
 32
@@ -49,7 +49,7 @@ Turn Off
 }
 
 {T1
-Entertainment Menu
+Demos
 >0
 }
 
@@ -63,14 +63,10 @@ Snake
 
 {I1
 128
-128
-128
-128
-128
 }
 
 {T2
-Utilities Menu
+System Control
 >0
 }
 
