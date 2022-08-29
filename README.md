@@ -11,4 +11,5 @@
 ## Запуск системы на реальном ПК
 1. Скачай и установи утилиту [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/files/latest/download)
 2. Загрузи [последнюю версию ОС в формате *.flp](https://github.com/PetrNebukin/NebukinPrompt/raw/main/disk_images/nebukinprompt.flp)
-3. Запусти Win32DiskImager и делай всё, как на фото:![Окно программы Win32DiskImager с выделением нужных кнопок](https://telegra.ph/file/e88db4a9b55cd0fa55f3d.png)
+3. Запусти Win32DiskImager и делай всё, как на фото:
+![Окно программы Win32DiskImager с выделением нужных кнопок](https://telegra.ph/file/e88db4a9b55cd0fa55f3d.png)
