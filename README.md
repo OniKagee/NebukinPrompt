@@ -25,7 +25,7 @@
 ## Запуск системы c помощью Bochs (Windows)
 1. [Скачай](https://github.com/PetrNebukin/NebukinPrompt/raw/main/emulator/bochs.zip) и распакуй Bochs;
 2. Загрузи [последнюю версию ОС в формате *.flp](https://github.com/PetrNebukin/NebukinPrompt/raw/main/disk_images/nebukinprompt.flp) и закинь в папку, куда ранее ты распаковал Bochs;
-3. Запусти ОС, запустив __boot.bat__
+3. Запусти ОС, открыв приложение __boot.bat__
 
   
 
