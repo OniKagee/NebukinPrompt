@@ -1,9 +1,4 @@
 ; ==================================================================
-; TachyonOS -- The TachyonOS Operating System kernel
-; Based on the MikeOS Kernel
-; Copyright (C) 2006 - 2012 MikeOS Developers -- see doc/MikeOS/LICENSE.TXT
-; Copyright (C) 2013 TachyonOS Developers -- see doc/LICENCE.TXT
-;
 ; MISCELLANEOUS ROUTINES
 ; ==================================================================
 
@@ -49,8 +44,7 @@ os_fatal_error:
 	jmp $				; Halt execution
 
 	
-	.msg_inform		db '>>> FATAL OPERATING SYSTEM ERROR', 13, 10, 0
+	.msg_inform		db '>>> FATAL ERROR', 13, 10, 0
 	
 
 ; ==================================================================
-
