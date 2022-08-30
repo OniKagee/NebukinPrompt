@@ -587,7 +587,7 @@ exit:
 
 	version_msg		db 'NebukinPrompt ', OS_VERSION_STRING, 13, 10, 0
 
-	eegg_msg		db 'Dedicated to my teachers and friends!', 13, 10, 0
+	eegg_msg		db 'BY PETR S. NEBUKIN, GBOY SHKOLA №2025, MOSCOW', 13, 10, 0
 
 	exit_string		db 'EXIT', 0
 	help_string		db 'HELP', 0
