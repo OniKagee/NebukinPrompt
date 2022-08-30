@@ -67,6 +67,10 @@ get_cmd:				; Main processing loop
 	call os_string_compare
 	jc near print_help
 
+	mov di, about_string		; 'ABOUT' entered?
+	call os_string_compare
+	jc near print_about
+
 	mov di, cls_string		; 'CLS' entered?
 	call os_string_compare
 	jc near clear_screen
@@ -623,10 +627,11 @@ exit:
 
 	version_msg		db 'NebukinPrompt ', OS_VERSION_STRING, 13, 10, 0
 
-	eegg_msg		db 'BY PETR S. NEBUKIN, GBOY SHKOLA №2025, MOSCOW', 13, 10, 0
+	eegg_msg		db 'BY PETR S. NEBUKIN', 13, 10, 0
 
 	exit_string		db 'EXIT', 0
 	help_string		db 'HELP', 0
+	about_string	db 'ABOUT', 0
 	cls_string		db 'CLS', 0
 	dir_string		db 'DIR', 0
 	time_string		db 'TIME', 0
