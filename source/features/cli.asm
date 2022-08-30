@@ -69,6 +69,7 @@ get_cmd:				; Main processing loop
 
 	mov di, about_string		; 'ABOUT' entered?
 	call os_string_compare
+	jc near clear_screen
 	jc near print_about
 
 	mov di, cls_string		; 'CLS' entered?
