@@ -15,7 +15,7 @@
 3. Запусти Win32DiskImager и делай всё, как на фото:
   
   
-![Окно программы Win32DiskImager с выделением нужных кнопок](https://telegra.ph/file/e88db4a9b55cd0fa55f3d.png);
+![Окно программы Win32DiskImager с выделением нужных кнопок](https://telegra.ph/file/e88db4a9b55cd0fa55f3d.png)
 
 4. Перезагружай ПК и грузись с устройства, на которое ты ранее записал образ ОС.
   
