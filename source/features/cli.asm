@@ -243,6 +243,32 @@ print_help:
 
 ; ------------------------------------------------------------------
 
+print_about:
+	mov si, aboutone_text
+	call os_print_string
+	mov si, abouttwo_text
+	call os_print_string
+	mov si, aboutthr_text
+	call os_print_string
+	mov si, aboutfou_text
+	call os_print_string
+	mov si, aboutfiv_text
+	call os_print_string
+	mov si, aboutsix_text
+	call os_print_string
+	mov si, aboutbrk_text
+	call os_print_string
+	mov si, aboutsev_text
+	call os_print_string
+	mov si, abouteig_text
+	call os_print_string
+	mov si, aboutnin_text
+	call os_print_string
+	jmp get_cmd
+
+
+; ------------------------------------------------------------------
+
 clear_screen:
 	call os_clear_screen
 	jmp get_cmd
@@ -579,6 +605,16 @@ exit:
 	prompt			db '> ', 0
 
 	help_text		db 'Commands: DIR, COPY, REN, DEL, CAT, SIZE, CLS, HELP, TIME, DATE, VER, EXIT', 13, 10, 0
+	aboutone_text		db 'NebukinPrompt - a 16-bit operating system written by Petr Nebukin in NASM', 13, 10, 0
+	abouttwo_text		db 'assembler for his school project "BIOS Features". As a file system, FAT12', 13, 10, 0
+	aboutthr_text		db 'is used. The NebukinBASIC interpreter was built into version 220406. The ', 13, 10, 0
+	aboutfou_text		db 'OS has its own bootloader. No external loaders such as GRUB are used for ', 13, 10, 0
+	aboutfiv_text		db 'booting. To simplify the code, it was decided not to use drivers for wor-', 13, 10, 0
+	aboutsix_text		db 'king with the keyb and scr, but to use the appropriate BIOS interrupts   ', 13, 10, 0
+	aboutbrk_text		db '                                                                         ', 13, 10, 0
+	aboutsev_text		db '                 Copyright (C)2021-2022 Petr S. Nebukin                  ', 13, 10, 0
+	abouteig_text		db '      State budgetary educational institution of the city of Moscow      ', 13, 10, 0
+	aboutnin_text		db '                             School No. 2025                             ', 13, 10, 0
 	invalid_msg		db 'No such command or program', 13, 10, 0
 	nofilename_msg		db 'No filename or not enough filenames', 13, 10, 0
 	notfound_msg		db 'File not found', 13, 10, 0
