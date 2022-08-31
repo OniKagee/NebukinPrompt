@@ -1,4 +1,4 @@
-rem UltraText Text Editor
+rem UltraText
 goto start
 
 apicall:
@@ -792,4 +792,3 @@ debug:
   pause 5
   t = t + 1
 return
-

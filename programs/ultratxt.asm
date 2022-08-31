@@ -2,7 +2,7 @@ bits 16
 org 32768
 %include 'mikedev.inc'
 
-%define VERSION_STRING		'2.33x10^25'
+%define VERSION_STRING		'3.25x10^25'
 
 ; Key code values with BIOS (using scan code set 1)
 %define UP_KEYCODE		0x48E0
@@ -120,7 +120,7 @@ run_basic:
 .editor_filename			db 'ULTRATXT.BIN', 0
 .variables				times 26 dw 0
 .parameters				times 128 db 0
-.finished_msg 				db '>>> NebukinBASIC Program Finished, press any key to continue...', 13, 10, 0
+.finished_msg 				db '>>> Program Finished, press any key to continue...', 13, 10, 0
 .reload_msg 				db 'Reloading the editor...', 0
 
 
@@ -136,9 +136,9 @@ crash:
 	call os_print_string
 	ret
 	
-	crash_msg			db "UltraText has crashed :(", 13, 10
-	db 'You can report this bug by contact me via email:'
-	db 13, 10, 'pnebookin@bk.ru', 13, 10, 0
+	crash_msg			db "UltraText has been stopped working :(", 13, 10
+	db 'You can report this bug by putting a bug report on the repository discussions:'
+	db 13, 10, 'GitHub.com/PetrNebukin/NebukinPrompt/Discussions/Categories/Bugs', 13, 10, 0
 
 ; A whole heap of commands that make up the command section. Can be called by
 ; the control section, see 'doc/registers.txt' for the information on the
@@ -297,19 +297,19 @@ draw_cmd:
 		ret
 		
 	key_strings			db 	'^G Get Help  ', 0
-	        			db	'^O WriteOut  ', 0
-	        			db	'^R Read File ', 0
+	        			db	'^O Save  ', 0
+	        			db	'^R Open ', 0
 	        			db	'^Y Prev Page ', 0
 	        			db	'^K Cut Text  ', 0
 	        			db	'^C Cur Pos ', 13, 10, 0
 	        			db	'^X Exit      ', 0
-	        			db	'^Z Run BASIC ', 0
+	        			db	'^Z Run NebukinBASIC ', 0
 	        			db	'^W Where Is  ', 0
 	        			db	'^V Next Page ', 0
 	        			db	'^U PasteText ', 0
 	        			db	'^J Copy Text ', 0
 	
-	name_and_version		db 	'ultratext ', VERSION_STRING, 0
+	name_and_version		db 	'UltraText ', VERSION_STRING, 0
 	
 set_filename:
 	; IN: p1 = filename (blank for none)
@@ -796,8 +796,9 @@ next_screen_delay:
 help_text_1:
   db 'UltraText: a nano clone for NebukinPrompt', 13, 10
   db 'Version ', VERSION_STRING, 13, 10
-  db 'Copyright (C) Petr S. Nebukin 2022', 13, 10
-  db 'Email: pnebookin@bk.ru', 13, 10
+  db 'Copyright (C) Petr Nebukin', 13, 10
+  db 'Assembled in GitHub', 13, 10
+  db 'GitHub.com/PetrNebukin/NebukinPrompt', 13, 10
   db 13, 10
   db 'Memory Usage', 13, 10
   db '============', 13, 10
@@ -1192,7 +1193,6 @@ text_start				dw 0
 text_end				dw 0
 
 ; Registers used by the control section to run sections of the command section.
-; See doc/registers.txt for information about this data
 registers:
 	cmd				dw 0
 	p1				dw 0
@@ -1211,6 +1211,5 @@ registers:
 ; Has to have '.txt' on the end or the build script will think it is a
 ; stand alone program and add it to disk.
 program_start:
-incbin 'ultratxt.bas.txt'
+incbin 'ultratext.bas.txt'
 program_end:
-
