@@ -1211,5 +1211,5 @@ registers:
 ; Has to have '.txt' on the end or the build script will think it is a
 ; stand alone program and add it to disk.
 program_start:
-incbin 'ultratext.bas.txt'
+incbin 'ultratxt.bas.txt'
 program_end:
