@@ -1,13 +1,9 @@
-REM >>>MIKEBASIC-PLUS-PLUS-LIBRARY<<<
+REM >>>MAXIBASIC-PLUS-PLUS-LIBRARY<<<
 REM Library Version 4.1.0
-REM Copyright (C) Joshua Beck.
-REM Email: zerokelvinkeyboard@gmail.com
-REM Licenced under the GNU General Public Licence revision 3.
-REM Requires MikeOS version 4.5 or later.
 
-REM Wiki: https://github.com/ZeroKelvinKeyboard/MikeOS-Apps/wiki/mbppdoc
 
-PRINT "MB++ Library version 4.1.0"
+PRINT "MaxiBasic++ Additional Library for NebukinPrompt"
+PRINT "ver. 4.1.0"
 END
 
 ANCITEXT:

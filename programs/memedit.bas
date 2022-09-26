@@ -1,8 +1,5 @@
 rem Memory Manipulator (MEMEDIT.BAS), version 3.2.0
-rem An advanced memory modification tool for MikeOS
-rem Copyright (C) Joshua Beck, 2015
-rem Email: zerokelvinkeyboard@gmail.com
-rem Licenced under the GNU General Public Licence v3, see LICENCE
+rem An advanced memory modification tool
 
 rem Requires the MB++ library, version 4.0.0 minimum
 include "mbpp.bas"
@@ -48,8 +45,8 @@ init:
 
   $5 = "              About"
        $6 = "Memory Manipulator, version 3.2.0|"
-  $6 = $6 + "Copyright (C) Joshua Beck 2015|"
-  $6 = $6 + "Licenced under the GNU GPLv3|\7"
+  $6 = $6 + "Copyright (C) Petr Nebukin|"
+  $6 = $6 + "Made with NebukinBASIC|\7"
        $7 = "Program Memory: " + x + " bytes|"
   $7 = $7 + "Avaliable Memory: " + v + " bytes"
   gosub mesbox

@@ -168,9 +168,9 @@ help:
 	help_word				db "HELP", 0
 	help_string				db "DISPLAY - Show AAP picture files", 13, 10
 	help_string2				db "Syntax: DISPLAY filename", 13, 10
-	help_string3				db "Copyright (C) Joshua Beck 2012", 13, 10
-	help_string4				db "Email: mikeosdeveloper@gmail.com", 13, 10
-	help_string5				db "Licenced under the GNU General Public Licence", 13, 10
+	help_string3				db "Copyright (C) Petr Nebukin", 13, 10
+	help_string4				db "Email: pnebookin@bk.ru", 13, 10
+	help_string5				db "Made on 100% assembler ;-)", 13, 10
 	help_string6				db 13, 10, 0
 	
 error:

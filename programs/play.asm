@@ -1,10 +1,8 @@
 ; Music Master (PLAY.ASM)
-; A sound player for MikeOS, uses tune editor sound format
-; Created by Joshua Beck
-; Released under the GNU General Public Licence, revision 3
+; A sound player, uses tune editor sound format
 ; Version 1.0.1
 
-bits 16						; MikeOS program header
+bits 16						; program header
 org 32768
 %include 'tachyonos.inc'
 

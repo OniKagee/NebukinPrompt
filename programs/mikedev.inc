@@ -1,4 +1,4 @@
-; This is kept for source compatibility with MikeOS programs
+; This is kept for source compatibility with old programs
 
 %DEFINE BLACK_ON_WHITE			11110000b
 %DEFINE WHITE_ON_BLACK			00001111b

@@ -1,8 +1,5 @@
 rem ASCII Artist, version 3.1.1 (DRAW.BAS)
-rem A text drawing program for MikeOS
-rem Copyright (C) Joshua Beck 2016
-rem Mail: mikeosdeveloper@gmail.com
-rem Licenced under the GNU General Public Licence, see licence.txt
+rem A text drawing program
 
 rem Requires the MB++ library, version 4.0 or later
 include "mbpp.bas"
@@ -776,9 +773,9 @@ return
 help_about:
   $5 = "              About"
        $6 = "ASCII Artist, version 3.1.1|"
-  $6 = $6 + "Copyright (C) Joshua Beck 2016|"
-  $6 = $6 + "Email: mikeosdeveloper@gmail.com|\7"
-       $7 = "Licenced under the GNU GPL v3|"
+  $6 = $6 + "Copyright (C) Petr Nebukin|"
+  $6 = $6 + "Email: pnebookin@bk.ru|\7"
+       $7 = "Made with NebukinBASIC|"
   $7 = $7 + "Uses the MB++ library, version 4.0"
   gosub mesbox
 return

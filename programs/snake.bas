@@ -1,7 +1,3 @@
-rem ** Muncher for MikeOS **
-rem Created by Justin Tokarchuk
-rem ------------------------------
-
 rem VARS
 rem j = score multiplier
 rem x, y = coords

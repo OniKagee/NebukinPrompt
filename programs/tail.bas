@@ -1,6 +1,4 @@
 rem Read the end of files.
-rem Copyright (C) Joshua Beck, 2012
-rem Email: mikeosdeveloper@gmail.com
 rem Licenced under GNU GPLv3
 rem Version 1.0.1
 
@@ -83,9 +81,6 @@ goto printfile
 
 help:
   print "Tail: Read the end of a file."
-  print "Copyright (C) Joshua Beck, 2012"
-  print "Email: mikeosdeveloper@gmail.com"
-  print "Licenced under the GNU General Public Licence v3"
   print "Syntax: tail filename [lines]"
   print "Defaults to ten lines."
   print ""
