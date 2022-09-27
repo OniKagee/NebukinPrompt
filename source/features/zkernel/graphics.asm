@@ -1,6 +1,5 @@
 ; ==================================================================
-; TachyonOS -- The TachyonOS Operating System kernel
-; Copyright (C) 2013 TachyonOS Developers -- see doc/LICENCE.TXT
+; NebukinPrompt
 ;
 ; GRAPHICS ROUTINES
 ; ==================================================================
