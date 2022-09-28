@@ -110,40 +110,6 @@ draw_background:
 	ret
 
 
-redraw:
-	cmp cx, 0			; How many lines to skip?
-	je loopy
-	dec cx
-
-skip_loop:
-	lodsb				; Read bytes until newline, to skip a line
-	cmp al, 10
-	jne skip_loop
-	jmp redraw
-
-
-loopy:
-	lodsb				; Get character from file data
-
-	cmp al, 10			; Return to start of line if carriage return character
-	jne skip_return
-	call os_get_cursor_pos
-	mov dl, 0
-	call os_move_cursor
-
-skip_return:
-	int 10h				; Print the character
-
-	cmp si, bx			; Have we printed all in the file?
-	je finished
-
-	call os_get_cursor_pos		; Are we at the bottom of the display area?
-	cmp dh, 23
-	je get_input
-
-	jmp loopy
-
-
 close:
 	call os_clear_screen
 	ret
