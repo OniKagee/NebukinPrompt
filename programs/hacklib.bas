@@ -1,6 +1,5 @@
 REM >>>HACKLIB<<<
 REM Library Version 1.0.0
-REM Copyright (C) Joshua Beck.
 REM Email: mikeosdeveloper@gmail.com
 REM Licenced under the GNU General Public Licence revision 3.
 REM Requires MikeOS version 4.3 or greater.

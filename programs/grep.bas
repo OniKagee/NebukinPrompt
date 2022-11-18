@@ -1,5 +1,4 @@
 rem GREP.BAS - commandline file search tool
-rem Copyright (C) Joshua Beck 2012
 rem Licenced under the GNU General Public Licence v3
 rem Version 1.1.0
 rem Email: mikeosdeveloper@gmail.com
@@ -118,9 +117,9 @@ return
   
 help:
   print "GREP - file search utility"
-  print "Copyright (C) Joshua Beck, 2012"
+  print "Copyright (C) Petr Nebukin"
   print "Licenced under the GNU General Public Licence v3"
-  print "Email: mikeosdeveloper@gmail.com"
+  print "Written in NebukinBASIC!"
   print ""
   print "Syntax: GREP filename string"
   print ""

@@ -1,5 +1,4 @@
 rem Read the start of files.
-rem Copyright (C)  Joshua Beck
 rem Licenced under the GNU GPLv3
 rem Version 1.0.1
 rem Email: mikeosdeveloper@gmail.com
@@ -76,7 +75,6 @@ goto printfile
 
 help:
   print "Head: Read the start of a file."
-  print "Copyright (C) Joshua Beck, 2012"
   print "Email: mikeosdeveloper@gmail.com"
   print "Licenced under the GNU General Public Licence v3"
   print "Syntax: head filename [lines]"

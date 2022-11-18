@@ -51,7 +51,7 @@ end
 help:
   print ""
   print "GetBytes: Command line memory reading utility."
-  print "Copyright (C) Joshua Beck, 2012"
+  print "Copyright (C) Petr Nebukin"
   print "Licenced under GNU GPLv3."
   print ""
   print "getbytes {-a} [start] [stop]"
