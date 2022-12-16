@@ -164,7 +164,7 @@ PUTVAR:
 
   REM save cursor position
   CURSPOS X Y
-  REM make sure it's not on the top lines  
+  REM make sure it's not on the top lines, or get err
   IF Y < 2 THEN Y = 2
   POKE X 65500
   POKE Y 65501
