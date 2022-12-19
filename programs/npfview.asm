@@ -120,7 +120,7 @@ close:
 	err_string	db 'Please select a NPF file!', 0
 
 	title_msg	db 'Nebukin Presentation Viewer', 0
-	footer_msg	db 'Select a PPF file to view, or press Esc to exit', 0
+	footer_msg	db 'Select a NPF file to view, or press Esc to exit', 0
 
 	skiplines	dw 0
 
