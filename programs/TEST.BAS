@@ -2,7 +2,7 @@ start:
   print "NebukinPrompt - Nebukin Petr Operating System - NebukinBasic DEMO #1"
   print "1-0-1 MODEL"
   print "-"
-  print Starting in 3 seconds...
+  print "Starting in 3 seconds..."
   pause 30
   print "1"
   sound 500 5
