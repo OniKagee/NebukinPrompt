@@ -4,7 +4,7 @@ start:
   waitkey x
   if x = 0 then print "Null signal"
   if x = 1 then sound 500 5
-  if x = x then end
+  if x = 'x' then end
   cls
   jump start
 end
