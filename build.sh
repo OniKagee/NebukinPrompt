@@ -62,7 +62,7 @@ rm -rf tmp-loop
 
 mkdir tmp-loop && mount -o loop -t vfat disk_images/nebukinprompt.flp tmp-loop && cp source/kernel.bin tmp-loop/ && cp source/zkernel.sys tmp-loop/
 
-cp programs/*.bin programs/*.bas diskfiles/*.* tmp-loop
+cp programs/*.bin programs/*.bas programs/*.BAS programs/*.BIN diskfiles/*.* tmp-loop
 
 sleep 0.2
 
